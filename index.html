@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Bookmark Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>🔖 Super Bookmark Manager</h1>
+            <div class="header-actions">
+                <input type="text" id="search-input" placeholder="Search bookmarks...">
+                <button id="theme-toggle">🌗 Toggle Mode</button>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <button id="add-category-btn">+ New Category</button>
+            <ul id="category-list" class="category-list">
+                <li class="category-item active" data-category-id="all">All Bookmarks</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h2 id="current-category-title">All Bookmarks</h2>
+                <button id="add-bookmark-btn">+ Add Bookmark</button>
+            </div>
+            <div id="bookmark-list" class="bookmark-list">
+                <div class="no-bookmarks">No bookmarks yet. Add some to get started!</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
